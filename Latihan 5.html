@@ -1,0 +1,66 @@
+<head><h1><marquee>CSS Position dan Overlow</marquee></h1></head>
+<style media="screen">
+    .container{
+        width: 50%;
+        height: 200px;
+        overflow: auto;
+        margin-left: 0 auto;
+    }
+    .static{ position: static; border: 2px solid green;}
+    .relative{
+        position: relative;
+        border: 2px solid red;
+        left: 20px;
+        bottom: 0;
+    }
+    .absolute{ position: absolute; border: 2px solid blue; left: 20px; bottom: 40px}
+    .fixed{ position: fixed; border: 2px solid black; bottom: 0; right: 0;}
+    .sticky{
+        position: sticky;
+        border: 2px solid yellow;
+        top:0;
+        left: 20px;
+        background: darkblue;
+        color: white;
+    }
+</style>
+<body>
+    <div class="container">
+        <p class="sticky">
+            Ini adalah contoh dari posisi sticky
+        </p>
+        <p class="static">
+            <b>Ini adalah contoh dari position tatic</b><br>
+            Lorem ipsum is simply dommy text of the printing and typesetting industry.
+            Lorem ipsum has been the industry a standard dommy text over sice the 1500e,
+            when an unknows printer took a gailey of type and scramble it to make a type
+            specimen book. It has survived not only five nenturies, but alen the leap into
+            electronic typesetting, remaining essentialy unchanged. It was popularised in
+            the 1960a with the relase of Letraset ahents containing Lorem Ipsum pacages.
+            and more recentlty with dekstop publishing sofware like aldea pagemarker including versions of Lorem Ipsum.
+        </p>
+        <p class="relative">
+            <b>Isi adalah contoh dari position relative</b><br>
+            Lorem ipsum is simply dommy text of the printing and typesetting industry.
+            Lorem ipsum has been the industry a standard dommy text over sice the 1500e,
+            when an unknows printer took a gailey of type and scramble it to make a type
+            specimen book. It has survived not only five nenturies, but alen the leap into
+            electronic typesetting, remaining essentialy unchanged. It was popularised in
+            the 1960a with the relase of Letraset ahents containing Lorem Ipsum pacages.
+            and more recentlty with dekstop publishing sofware like aldea pagemarker including versions of Lorem Ipsum.
+        </p>
+        <p class="absolute">
+            <b>Ini adalah contoh dari position absolute</b><br>
+            Lorem ipsum is simply dommy text of the printing and typesetting industry.
+            Lorem ipsum has been the industry a standard dommy text over sice the 1500e,
+            when an unknows printer took a gailey of type and scramble it to make a type
+            specimen book. It has survived not only five nenturies, but alen the leap into
+            electronic typesetting, remaining essentialy unchanged. It was popularised in
+            the 1960a with the relase of Letraset ahents containing Lorem Ipsum pacages.
+            and more recentlty with dekstop publishing sofware like aldea pagemarker including versions of Lorem Ipsum.
+        </p>
+        <p class="fixed">
+            Ini merupakan contoh dari position fixed
+        </p>
+    </div>
+</body>
